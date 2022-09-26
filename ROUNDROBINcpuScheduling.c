@@ -1,5 +1,6 @@
 #include<stdio.h>
 struct process{
+    int no;
     int burstTime;
     int burstCopy;
     int completionTime;
@@ -45,7 +46,7 @@ int main(){
     }
     printf("\nPro  bur com turn wait \n");
     for(i=0;i<n;i++){
-        printf("p[%d]  %d    %d     %d     %d  \n",i,p[i].burstCopy,p[i].completionTime,p[i].turnaroundTime,p[i].waitingTime);
+        printf("p[%d]  %d    %d     %d     %d  \n",p[i].no,p[i].burstCopy,p[i].completionTime,p[i].turnaroundTime,p[i].waitingTime);
     }
     avgTurnAroundtime=(totalTurn/n);
     avgWaitingTime=(totalWait/n);
