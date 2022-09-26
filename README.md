@@ -1,0 +1,3 @@
+# Operating_system_lab
+KTU 2019 SCHEME
+OPERATING SYSTEM LAB PROGRAMS
