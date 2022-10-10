@@ -10,7 +10,7 @@ int main(){
         scanf("%d",&pages[i]);
     }
     for(i=0;i<f;i++){
-        result[i]='\0';
+        result[i]=-1;
     }
     printf("REF \t\tPages\n");
     pageFault=0;
@@ -33,7 +33,7 @@ int main(){
             printf("%d *\t\t",pages[i]);
         }
         for(j=0;j<f;j++){
-            if(result[j]!='\0'){
+            if(result[j]!=-1){
                 printf("%d   ",result[j]);
             }
             else{
